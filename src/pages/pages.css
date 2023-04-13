@@ -3,4 +3,53 @@
     top:0;
     left:0;
     right:0;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+
+}
+.image-header{
+    aspect-ratio: 1.5/1;
+    max-height: 180px;
+}
+.main-header{
+    margin-top: 8rem;
+}
+.over-box-shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.bg-blue{
+    background-color:#0051a3 ;
+}
+.input{
+    background-color: rgb(204, 203, 203);
+    font-size: 0.8rem;
+}
+.bi-funnel {
+font-weight: 200 !important;
+font-size: 1rem !important;
+}
+.label{
+font-size: 0.8rem;
+}
+
+.dropdown-toggle{
+    background-color: rgb(204, 203, 203) !important;
+    font-size: 0.8rem;
+    color:rgb(141, 139, 139) !important;
+    min-width: 50px;
+    text-align: left ;
+}
+.ruler{
+    width: 100px;
+   
+}
+.advanced-ruler{
+    background-color: rgb(208, 205, 205);
+    border-top-right-radius: 12px;
+    border-top-left-radius:12px ;
+}
+.small-text{
+    font-size: 0.75rem;
+}
+.text-grey{
+    color:rgb(141, 139, 139)
 }

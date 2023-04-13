@@ -1,11 +1,11 @@
 import React from 'react';
 function Header() {
-    return ( <div className='header'>
+    return ( <div className='header d-flex justify-content-between p-4'>
 <div>
     <h2>Ministry of Tourism</h2>
 </div>
 <div>
-    <h3>Swatch bharat</h3>
+    <h2>Swatch bharat</h2>
 </div>
     </div> );
 }

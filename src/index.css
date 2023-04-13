@@ -1,12 +1,16 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  
+overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.btn-primary{
+  background-color: #0051a3 !important;
+font-size: 0.8rem;
+font-weight: 600;
+min-width: 8rem;
 }
