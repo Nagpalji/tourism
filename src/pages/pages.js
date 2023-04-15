@@ -1,4 +1,4 @@
-import React ,{useState}from "react";
+import React from "react";
 import "./pages.css";
 import Header from "./header";
 import goldenTemple from "../images/goldenTemple.jpg";
@@ -6,9 +6,42 @@ import hawaMahal from "../images/hawaMahal.jpg";
 import kerala from "../images/kerala.jpg";
 import tajTemple from "../images/tajTemple.jpg";
 
+import Chart from "react-apexcharts";
 function HomePages() {
-  
+ const  series= [20, 10, 7, 13,50]
+ const options =  {
+  chart: {
+    type: 'donut',
+    height:200,
+    
+  },
+  fill: {
+    colors: [ '#4169E1', '#0ABAB5', '#ee9f27','#d3d3d3','#00B7EB']
+  },
+  legend: {
+    show: false
+  },
+  plotOptions: {
+    pie: {
+      donut: {
+        size: '45%'
+      }
+    }
+  },
+
+  responsive: [{
+    breakpoint: 480,
+width:300,
+    options: {
       
+      legend: {
+       show:false
+      },
+    
+     
+    }
+  }]}
+
   return (
     <div>
       <Header />
@@ -24,103 +57,35 @@ function HomePages() {
           <img src={tajTemple} alt="hawaMahal" className="col-3 image-header" />
         </div>
 
-        <div className="over-box-shadow">
-          <div className="col-12 p-1">
-            <button className="btn btn-primary me-1 mt-1 mb-1 p-1">
-              About
-            </button>
-            <button className="btn btn-primary me-1 mt-1 mb-1 p-1">
-              Historical
-            </button>
-            <button className="btn btn-primary me-1 mt-1 mb-1 p-1">
-              Marketplace
-            </button>
-            <button className="btn btn-primary me-1 mt-1 mb-1 p-1">
-              Coastal links
-            </button>
-            <button className="btn btn-primary me-1 mt-1 mb-1 p-1">
-              Spiritual Religious
-            </button>
-            <button className="btn btn-primary me-1 mt-1 mb-1 p-1">
-              Wildlife
-            </button>
-          </div>
-        </div>
-
-        <div className="col-12">
-          <div className="row">
-            <div className="col-md-2  col-12 bg-blue">
-              <div className="row">
-                <div className="d-flex mt-3  mb-2 ms-2">
-                  <input
-                    placeholder="Enter Site Name"
-                    className="input form-control p-0 ps-2 me-1"
-                  />
-                  <div className="ps-1 pe-1 me-1">
-                    {" "}
-                    <i class="bi bi-funnel text-light fw-lighter"></i>
-                  </div>
-                </div>
-
-                <div className="text-light label ms-2 fw-bold">Location Score</div>
-                <div class=" ms-2 dropdown ">
-  <a class="btn btn-secondary dropdown-toggle btn-sm p-0 ps-2 col-11" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-    Zone
-  </a>
-
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
-
-<div class=" ms-2 dropdown">
-  <a class="btn btn-secondary dropdown-toggle btn-sm p-0 ps-2 col-11" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-    State
-  </a>
-
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
-
-<div class=" ms-2 dropdown">
-  <a class="btn btn-secondary dropdown-toggle btn-sm p-0 ps-2 col-11" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-    District
-  </a>
-
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
-<div></div>
 
 
-    <div className="mb-1 mt-2 me-2 ms-2" >
-    
-    <div className="label text-light fw-bold ps-1 mt-2"> Advanced Filter Score</div>
-    <div className="advanced-ruler me-2 p-2 mt-1 ">
-        <div className="text-grey small-text fw-bold ">Accessebility</div>
-        <div className="hr pt-5"></div>
-        <div className="text-grey small-text fw-bold ">Amenities</div>
-        <div className="hr pt-5"></div>
-        <div className="text-grey small-text fw-bold ">Amenities</div>
-        <div className="hr pt-5"></div>
+<div className="row">
+  <div className="col-md-5 col-12"></div>
+  <div className="col-md-3 col-12">
+    <div className="row d-flex justify-content-center align-items-center ps-4 pt-3">
+      <ul >
+        <li className="pt-1">  <h3 className=" fw-400 ps-4"> Historical</h3></li>
+        <li className="pt-1" >  <h3 className="fw-400 ps-4"> Marketplace</h3></li>
+        <li className="pt-1">  <h3 className="fw-400 ps-4 "> Coastal Lakes</h3></li>
+        <li className="pt-1" >  <h3 className="fw-400 ps-4"> Spiritual Religious</h3></li>
+        <li className="pt-1">  <h3 className="fw-400 ps-4"> Wildlife</h3></li>
+
+      </ul>
     </div>
-   
-   
+    <div className="green-btn m-3">
+      <div className="fw-800 f-16 text-center">Total Number of Site</div>
+      <div className="f-2 fw-800 text-center">185</div>
+    </div>
+  </div>
+  <div className="col-md-3 col-12">
+  <div id="chart" className="pt-3 d-flex justify-content-center">
+        <Chart options={options} series={series} type="donut" width="470" />
 </div>
-              </div>  
-            </div>
-            <div className="col-md-4 col-12"></div>
-            <div className="col-md-5 col-12"></div>
-          </div>
-        </div>
+    
+  </div>
+
+</div>
+     
       </div>
     </div>
   );

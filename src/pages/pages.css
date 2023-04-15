@@ -4,14 +4,15 @@
     left:0;
     right:0;
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
-
+overflow-x: hidden;
 }
 .image-header{
     aspect-ratio: 1.5/1;
     max-height: 180px;
 }
 .main-header{
-    margin-top: 8rem;
+    margin-top: 7rem;
+    overflow-x: hidden;
 }
 .over-box-shadow{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -41,6 +42,28 @@ font-size: 0.8rem;
 .ruler{
     width: 100px;
    
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-800{
+    font-weight: 900;
+    letter-spacing: -0.09rem;
+}
+.f-16{
+    font-size: 1.6rem;
+}
+.f-2{
+    font-size: 2rem;
+}
+.green-btn{
+    border-radius: 17px;
+    background-color: #ddead1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.bi-dot{
+    font-size: 3rem;
 }
 .advanced-ruler{
     background-color: rgb(208, 205, 205);
