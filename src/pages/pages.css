@@ -86,8 +86,9 @@ font-size: 0.8rem;
     font-size: 0.8rem;
 }
 .border-overall{
-    border: 2px solid #0051a3;
+    border: 1px solid #0051a3;
 }
+
 @media (min-width:60em) {
     .main-header{
         margin-top: 6rem;

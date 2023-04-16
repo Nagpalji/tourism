@@ -4,11 +4,12 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import HomePages from './pages/pages';
 import Site from './pages/site';
+import Accessibility from './pages/Accessibility';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <Site/>
+  <Accessibility/>
 
   </React.StrictMode>
 );
