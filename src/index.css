@@ -1,19 +1,35 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.btn-primary{
+
+.btn-primary {
   background-color: #0051a3 !important;
-font-size: 0.8rem;
-font-weight: 600;
-min-width: 8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  min-width: 8rem;
 }
-.whole-page{
-  max-height:100vh ;
+
+.whole-page {
+  max-height: 100vh;
+}
+
+.buttonPink{
+  background-color: blueviolet;
+  width: 25%;
+  border-radius: 20px;
+  color: white;
+}
+
+thead{
+  background-color: aqua;
+}
+
+.row{
+  width: auto;
 }
