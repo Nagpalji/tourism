@@ -3,7 +3,7 @@
     top:0;
     left:0;
     right:0;
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 overflow-x: hidden;
 }
 .image-header{
@@ -11,7 +11,7 @@ overflow-x: hidden;
     max-height: 180px;
 }
 .main-header{
-    margin-top: 7rem;
+    margin-top: 8rem;
     overflow-x: hidden;
 }
 .over-box-shadow{
@@ -19,6 +19,12 @@ overflow-x: hidden;
 }
 .bg-blue{
     background-color:#0051a3 ;
+}
+.font-blue{
+    color:#0051a3
+}
+.nav-shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 .input{
     background-color: rgb(204, 203, 203);
@@ -75,4 +81,16 @@ font-size: 0.8rem;
 }
 .text-grey{
     color:rgb(141, 139, 139)
+}
+.about{
+    font-size: 0.8rem;
+}
+.border-overall{
+    border: 2px solid #0051a3;
+}
+@media (min-width:60em) {
+    .main-header{
+        margin-top: 6rem;
+        overflow-x: hidden;
+    }
 }
