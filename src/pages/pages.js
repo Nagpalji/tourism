@@ -5,7 +5,7 @@ import goldenTemple from "../images/goldenTemple.jpg";
 import hawaMahal from "../images/hawaMahal.jpg";
 import kerala from "../images/kerala.jpg";
 import tajTemple from "../images/tajTemple.jpg";
-
+import Indiamap from "../images/Indiamap.jpg"
 import Chart from "react-apexcharts";
 function HomePages() {
  const  series= [20, 10, 7, 13,50]
@@ -60,7 +60,9 @@ width:300,
 
 
 <div className="row">
-  <div className="col-md-5 col-12"></div>
+  <div className="col-md-5 col-12">
+    <img src={Indiamap} alt="indiamap" width={'500'} />
+  </div>
   <div className="col-md-3 col-12">
     <div className="row d-flex justify-content-center align-items-center ps-4 pt-3">
       <ul >
