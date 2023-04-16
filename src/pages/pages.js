@@ -11,6 +11,7 @@ import Table from "./table";
 function HomePages() {
   const series = [20, 10, 7, 13, 50];
   const options = {
+    labels: ["Historical", "Marketplace", "Coastal Lakes", "Spiritual Religious", "Wildlife"],
     chart: {
       type: "donut",
       height: 200,
