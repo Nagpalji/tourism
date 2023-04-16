@@ -1,11 +1,15 @@
 import React,{useState} from "react";
 import Header from "./header";
 import SiteNav from "./sitenav";
-
+import golden1 from '../images/golden1.jpg';
+import golden2 from '../images/golden2.jpg';
+import golden3 from '../images/golden3.jpeg';
+import golden5 from '../images/golden5.jpg';
+import golden4 from '../images/golden4.jpeg';
 function Site() {
 const[expand , setExpand]=useState(false)
   return (
-    <>
+    <div className="whole-page">
       <Header />
       <div className="main-header">
       < SiteNav/>
@@ -25,7 +29,7 @@ const[expand , setExpand]=useState(false)
             <div className="border-overall p-3">
                 <div className="row px-4">
                     <div className="col-md-9 col-12">
-                        <div className="row justify-content-center">
+                        <div className="row justify-content-center align-items-center">
                         <div className="col-md-4 col-12">
                     <span id="boot-icon" class="bi bi-emoji-smile-fill" style={{color:"rgb(56, 201, 7)" , fontSize:'6rem' }}></span> 
                     <div className="fw-bold"> Site Overall</div>
@@ -79,12 +83,25 @@ const[expand , setExpand]=useState(false)
         </div>
         </div>
        
-        <div className="col-md-4 col-12"></div>
+        <div className="col-md-4 col-12">
+          <div className="side-image-bar">
+              <img src={golden3} alt="goldentemple" height={300} width={500}/>
+              <div className="d-flex">
+                <img src={golden1} alt="goldentemple" height={200}/>
+                <img src={golden2} alt="goldentemple" height={200}/>
+                <img src={golden3} alt="goldentemple" height={200}/>
+              </div>
+<div className="d-flex">
+<img src={golden4} alt="goldentemple"/>
+<img src={golden5} alt="goldentemple"/>
+</div>
+          </div>
+        </div>
        
         
        </div>
       </div>
-    </>
+    </div>
   );
 }
 
